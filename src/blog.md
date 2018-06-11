@@ -3,11 +3,11 @@ layout: layout.hbs
 ---
 
 <div class="md-col-12 mb2">
-  <div class="center p2">
-<p>Coming soon...</p>
-<!--<p>-->
-<!--A peep at some distant orb has power to raise and purify our thoughts like a strain of sacred music, or a noble picture, or a passage from the grander poets. It always does one good.-->
-<!--</p>-->
+  <div class="p2">
+
+<p>
+A peep at some distant orb has power to raise and purify our thoughts like a strain of sacred music, or a noble picture, or a passage from the grander poets. It always does one good.
+</p>
 
 <!--<p>-->
 <!--Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.-->
