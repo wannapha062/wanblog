@@ -1,0 +1,54 @@
+{
+  "name": "wanblog",
+  "version": "1.0.0",
+  "description": "wannapha062",
+  "private": true,
+  "scripts": {
+    "watch": "nodemon --watch layouts --watch src -e hbs,md,css -x \"npm run build\"",
+    "build": "node build",
+    "start": "npm run watch & nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "deploy": "git subtree push --prefix=public/ website master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wannapha062/wanblog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wannapha062/wanblog/issues"
+  },
+  "homepage": "https://github.com/wannapha062/wanblog#readme",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.0",
+    "basscss": "^8.0.4",
+    "basscss-background-colors": "^2.1.0",
+    "basscss-btn": "^1.1.1",
+    "basscss-colors": "^2.2.0",
+    "cssnano": "^3.10.0",
+    "cssstats": "^3.2.0",
+    "jstransformer-handlebars": "^1.1.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-assets": "^0.1.0",
+    "metalsmith-inline-source": "^1.0.6",
+    "metalsmith-layouts": "^2.1.0",
+    "metalsmith-markdown": "^0.2.2",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-postcss": "^4.1.1",
+    "nodemon": "^1.17.5",
+    "postcss-calc": "^6.0.1",
+    "postcss-cli": "^5.0.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^7.0.0",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-import": "^11.1.0",
+    "postcss-remove-root": "0.0.2",
+    "postcss-reporter": "^5.0.0"
+  }
+}
