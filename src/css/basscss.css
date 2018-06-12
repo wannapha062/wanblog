@@ -122,6 +122,13 @@
   --custom-color-background: #555;
 }
 
+:root {
+  --width-1: 24rem;
+  --width-2: 32rem;
+  --width-3: 48rem;
+  --width-4: 64rem;
+}
+
 /* bassplate */
 
 * {
@@ -214,15 +221,21 @@ footer a {
   background-color: var(--custom-color-foreground);
   min-height: 10rem;
 }
-
+#navi img {
+  transition: all .2s ease-in-out;
+}
 .navState2 {
-  background-color:red;
-  height:70px;
   position: fixed;
   top: 0;
-  width: inherit;
+  width: var(--width-4);
 	z-index: 1;
+	font-size: 12px;
 }
-.navState2 #menu {
-  font-size: 12px;
+.navState2 img {
+  transition: all .2s ease-in-out;
+  width: 28px;
+  height: 28px;
+}
+.navState2 .amenu {
+  display: none;
 }

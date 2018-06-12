@@ -12,14 +12,14 @@
   </head>
   <body>
 <div class="max-width-4 mx-auto">
-  <nav id="navi" class="clearfix bg-black">
+  <nav id="navi" class="clearfix">
   <div id="menu" class="left m1 sm-hide">
     <a href="/">
       <img src="/images/logo.png" width="54" height="54" class="circle align-middle" alt="home">
     </a>
-    <a href="/">Home</a>
-    <a href="/blog" class="ml2">Blog</a>
-    <a href="/photos" class="ml2">Photos</a>
+    <a href="/" class="amenu">Home</a>
+    <a href="/blog" class="ml2 amenu">Blog</a>
+    <a href="/photos" class="ml2 amenu">Photos</a>
   </div>
   <div class="right m1">
     <a href="/profile">
@@ -73,18 +73,22 @@
 </div>
 </footer>
 <script>
-window.onscroll = function() {
-  var navi = document.getElementById("navi");
-  if (window.pageYOffset > navi.offsetHeight) {
-    console.log("in");
-    navi.classList.add("navState2");
-  } else {
-    console.log("out");
-    navi.classList.remove("navState2");
-  }
-  //console.log(navi.offsetHeight, window.pageYOffset);
-
-};
+let isScrolled = false;
+let navi = document.getElementById("navi");
+window.onscroll = doScroll;
+function doScroll() {
+    isScrolled = true;
+}
+setInterval(function() {
+    if (isScrolled) {
+        isScrolled = false;
+        if (window.pageYOffset > navi.offsetHeight) {
+          navi.classList.add("navState2");
+        } else {
+          navi.classList.remove("navState2");
+        }
+    }
+}, 250);
 </script>
   </body>
 </html>
