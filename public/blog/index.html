@@ -12,8 +12,8 @@
   </head>
   <body>
 <div class="max-width-4 mx-auto">
-  <nav class="clearfix">
-  <div class="left m1 sm-hide">
+  <nav id="navi" class="clearfix bg-black">
+  <div id="menu" class="left m1 sm-hide">
     <a href="/">
       <img src="/images/logo.png" width="54" height="54" class="circle align-middle" alt="home">
     </a>
@@ -57,7 +57,8 @@ A peep at some distant orb has power to raise and purify our thoughts like a str
 <!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
-<p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p>
+<p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+This site uses cookies to deliver our services and to show you relevant ads and job listings. By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service. Your use of wannapha062’s Products and Services, including the wannapha062.github.io, is subject to these policies and terms. </p>
 
 </div>
 <footer >
@@ -76,6 +77,20 @@ A peep at some distant orb has power to raise and purify our thoughts like a str
     
 </div>
 </footer>
+<script>
+window.onscroll = function() {
+  var navi = document.getElementById("navi");
+  if (window.pageYOffset > navi.offsetHeight) {
+    console.log("in");
+    navi.classList.add("navState2");
+  } else {
+    console.log("out");
+    navi.classList.remove("navState2");
+  }
+  //console.log(navi.offsetHeight, window.pageYOffset);
+
+};
+</script>
   </body>
 </html>
 

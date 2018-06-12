@@ -214,3 +214,15 @@ footer a {
   background-color: var(--custom-color-foreground);
   min-height: 10rem;
 }
+
+.navState2 {
+  background-color:red;
+  height:70px;
+  position: fixed;
+  top: 0;
+  width: inherit;
+	z-index: 1;
+}
+.navState2 #menu {
+  font-size: 12px;
+}

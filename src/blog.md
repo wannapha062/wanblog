@@ -31,3 +31,4 @@ A peep at some distant orb has power to raise and purify our thoughts like a str
 <!--</div>-->
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+This site uses cookies to deliver our services and to show you relevant ads and job listings. By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service. Your use of wannapha062’s Products and Services, including the wannapha062.github.io, is subject to these policies and terms. 

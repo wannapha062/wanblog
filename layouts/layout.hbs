@@ -8,13 +8,12 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>{{ title }}</title>
 <link href="https://fonts.googleapis.com/css?family=Kadwa:400,700" rel="stylesheet">
-    {{!--<link inline rel="stylesheet" type="text/css" href="assets/css/basscss.min.css">--}}
     <link rel="stylesheet" type="text/css" href="/css/basscss.css">
   </head>
   <body>
 <div class="max-width-4 mx-auto">
-  <nav class="clearfix">
-  <div class="left m1 sm-hide">
+  <nav id="navi" class="clearfix bg-black">
+  <div id="menu" class="left m1 sm-hide">
     <a href="/">
       <img src="/images/logo.png" width="54" height="54" class="circle align-middle" alt="home">
     </a>
@@ -50,6 +49,20 @@
     
 </div>
 </footer>
+<script>
+window.onscroll = function() {
+  var navi = document.getElementById("navi");
+  if (window.pageYOffset > navi.offsetHeight) {
+    console.log("in");
+    navi.classList.add("navState2");
+  } else {
+    console.log("out");
+    navi.classList.remove("navState2");
+  }
+  //console.log(navi.offsetHeight, window.pageYOffset);
+
+};
+</script>
   </body>
 </html>
 
