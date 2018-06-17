@@ -1,0 +1,29 @@
+#!/bin/bash
+git config --global user.email "wannapha062@protonmail.com"
+git config --global user.name "wannapha062"
+git config --global push.default simple
+
+echo 'export PATH="/workspace/bin:/workspace/bin/heroku/bin:/workspace/bin/gradle-4.6/bin:/workspace/bin/jdk1.8.0_162/bin:/workspace/bin/kotlinc/bin:/workspace/bin/kotlin-native-linux-0.6/bin:$PATH"' >> ~/.bashrc
+echo 'export JAVA_HOME="/workspace/bin/jdk1.8.0_162"' >> ~/.bashrc
+echo 'export PATH=":$PATH:/workspace/bin/mongodb-linux-x86_64-3.6.4/bin"' >> ~/.bashrc
+echo 'export PATH=":$PATH:/workspace/bin/apache-maven-3.5.3/bin"' >> ~/.bashrc
+echo 'export PATH=":$PATH:/workspace/bin/james-server-app-3.0.1/bin"' >> ~/.bashrc
+echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
+echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
+
+echo 'export PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ "' >> ~/.bashrc
+echo 'export LS_COLORS="di=01;36;40"' >> ~/.bashrc
+
+mkdir ~/.ssh
+cp /workspace/.dirssh/id_* ~/.ssh
+chmod 600 ~/.ssh/id_rsa
+chmod 644 ~/.ssh/id_rsa.pub
+
+#yum group install "C Development Tools and Libraries" !!NO NEED on Fedora
+#yum -y install rpm-build postgresql postgresql-devel ruby-devel zlib-devel
+#yum -y group install 'Ruby on Rails'
+
+
+#yum -y install sqlite
+
+#rails new basicblog --database=postgresql --skip-coffee
